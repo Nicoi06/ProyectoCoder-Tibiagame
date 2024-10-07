@@ -15,20 +15,23 @@
 }
 
 #main {
-  max-height: 100vh;
+  min-height: 100vh;
   max-width: 100%;
   align-items: center;
+  padding-top: 90px;
 }
 
 /*body de pages*/
 #body2 {
   max-width: 1920px;
-  min-height: 100vh;
   background-image: url(../Images/fondo2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+  padding-bottom: 110px;
+  min-height: 100vh;
 }
 
 /*body login*/
@@ -54,7 +57,7 @@
 }
 
 .nav-link {
-  color: darkgray;
+  color: white;
 }
 
 .nav-item {
@@ -86,7 +89,7 @@
 /*baner inicio*/
 #baner {
   width: 100%;
-  height: 580px;
+  height: 100vh;
   position: relative;
 }
 
@@ -113,6 +116,7 @@
 
 .card1, .card2, .card3 {
   margin: 50px;
+  background-color: transparent;
 }
 
 .card1 img {
@@ -124,9 +128,6 @@
   background-color: rgb(199, 182, 31);
   height: 200px;
   border: 3px solid black;
-}
-
-.card-body-shop {
   align-items: center;
 }
 
@@ -146,9 +147,13 @@
 .card4, .card5, .card6 {
   width: 250px;
   height: 400px;
-  margin: 100px;
+  margin: 50px;
   background-color: transparent;
   align-items: center;
+}
+
+.boton-comprar {
+  width: 100%;
 }
 
 .h1shop {
@@ -268,6 +273,11 @@ li:hover {
   font-weight: 600;
 }
 
+.login1 .boton:hover {
+  background-color: rgb(107, 83, 107);
+  transition: 0.2s;
+}
+
 .login1 .register-link {
   font-size: 15px;
   text-align: center;
@@ -290,14 +300,6 @@ li:hover {
   border: 4px solid;
 }
 
-.box1 {
-  margin-top: 30px;
-}
-
-.col-md-4 {
-  background-color: rgb(199, 182, 31);
-}
-
 .card-body-descarga h5 {
   font-family: "popins", sans-serif;
   text-align: left;
@@ -309,15 +311,12 @@ li:hover {
   width: 200px;
   height: 200px;
   border: 4px solid;
+  background-color: rgb(199, 182, 31);
 }
 
 .col-md-4 img {
   width: 100%;
   height: 100%;
-}
-
-.box3 {
-  max-height: 200px;
 }
 
 .card-body-descarga, .card-text-descarga {
@@ -353,17 +352,22 @@ li:hover {
 
 /*Estilos Footer*/
 #footer {
-  max-width: 100%;
+  width: 100%;
   min-height: 100px;
   background-color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 20px 50px;
+  position: absolute;
 }
 
-.footer_logo img {
-  height: 80px;
+.text-contacto {
+  color: #fdfbfb;
+}
+
+.footer__logo img {
+  height: 70px;
 }
 
 .footer_whasp, .footer_facebook {
@@ -379,12 +383,17 @@ li:hover {
   transform: translateY(-10px);
 }
 
-.footer_links ul li a {
+.footer_links ul {
   color: white;
+  display: flex;
   align-items: center;
   flex-direction: column;
+  list-style: none;
+}
+
+.footer_links ul li a {
+  color: white;
   text-decoration: none;
-  display: flex;
 }
 
 /*responsive*/
@@ -414,6 +423,9 @@ li:hover {
     width: 300px;
     height: auto;
   }
+}
+html, body {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
