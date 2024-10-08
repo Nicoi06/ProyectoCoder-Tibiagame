@@ -341,6 +341,10 @@ li:hover {
   background-color: rgb(199, 182, 31);
 }
 
+.card-header {
+  background-color: white;
+}
+
 .card-body-info {
   background-color: rgb(199, 182, 31);
 }
