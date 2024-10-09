@@ -8,17 +8,17 @@
   font-family: sans-serif;
 }
 
-/*body de index-inicio*/
-#body1 {
-  max-width: 1920px;
-  background-color: rgb(36, 31, 31);
-}
-
 #main {
   min-height: 100vh;
   max-width: 100%;
   align-items: center;
   padding-top: 90px;
+}
+
+/*body de index-inicio*/
+#body1 {
+  max-width: 1920px;
+  background-color: rgb(36, 31, 31);
 }
 
 /*body de pages*/
@@ -84,6 +84,80 @@
   text-decoration: none;
   font-size: clamp(2rem, 6vw, 2rem);
   color: rgb(247, 243, 243);
+}
+
+/*responsive*/
+@media screen and (max-width: 900px) {
+  .shoping {
+    width: 300px;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 150px);
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+#section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .login1 {
+    width: 300px;
+    height: auto;
+  }
+}
+/*Estilos Footer*/
+#footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+}
+
+.text-contacto {
+  color: #fdfbfb;
+}
+
+.footer__logo img {
+  height: 70px;
+}
+
+.footer_whasp, .footer_facebook {
+  font-size: 40px;
+  color: white;
+}
+
+.footer_facebook :hover {
+  transform: translateY(-10px);
+}
+
+.footer_whasp :hover {
+  transform: translateY(-10px);
+}
+
+.footer_links ul {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+.footer_links ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 /*baner inicio*/
@@ -354,80 +428,6 @@ li:hover {
   border: none;
 }
 
-/*Estilos Footer*/
-#footer {
-  width: 100%;
-  min-height: 100px;
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px 50px;
-  position: absolute;
-}
-
-.text-contacto {
-  color: #fdfbfb;
-}
-
-.footer__logo img {
-  height: 70px;
-}
-
-.footer_whasp, .footer_facebook {
-  font-size: 40px;
-  color: white;
-}
-
-.footer_facebook :hover {
-  transform: translateY(-10px);
-}
-
-.footer_whasp :hover {
-  transform: translateY(-10px);
-}
-
-.footer_links ul {
-  color: white;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  list-style: none;
-}
-
-.footer_links ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-/*responsive*/
-@media screen and (max-width: 900px) {
-  .shoping {
-    width: 300px;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 150px);
-  }
-}
-@media screen and (max-width: 480px) {
-  #footer {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-}
-#section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (max-width: 900px) {
-  .login1 {
-    width: 300px;
-    height: auto;
-  }
-}
 html, body {
   height: 100%;
 }

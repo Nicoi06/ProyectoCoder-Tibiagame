@@ -1,95 +1,12 @@
-/*FORMATEO DE DOCUMENTO*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: none;
-    text-decoration: none;
-    font-family: sans-serif;
-  }
-  
-  
-  /*body de index-inicio*/
-  #body1 {
-    max-width: 1920px;
-    background-color: rgb(36, 31, 31);
-  }
-  
-  #main {
-    min-height: 100vh;
-    max-width: 100%;
-    align-items: center;
-    padding-top: 90px;
 
-    
-  }
+  @import "formatos/reset";
+  @import "formatos/body";
+  @import "formatos/header";
+  @import "formatos/brackpoints";
+  @import "formatos/footer";
   
-  /*body de pages*/
-  #body2 {
-    max-width: 1920px;
-    background-image: url(../Images/fondo2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    padding-bottom: 110px;
-    min-height: 100vh;
-    
-    
-  }
   
-  /*body login*/
-  #body3 {
-    max-width: 1920px;
-    max-height: 100vh;
-    background: url(../Images/fondo2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-  
-  /*formato navbar/header*/
-  #header {
-    width: 100%;
-    background-color: rgb(12, 12, 12);
-    position: fixed;
-    z-index: 10;
-    background: transparent;
-    backdrop-filter: blur(20px);
-  }
-  
-  .nav-link {
-    color: white;
-  }
-  
-  .nav-item {
-    width: 100px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .navbar-nav {
-    width: 900px;
-  }
-  
-  .navBar__logo {
-    width: 70px;
-  }
-  
-  .descarga {
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-family: "latin moderm roman";
-    text-align: end;
-    text-decoration: none;
-    font-size: clamp(2rem, 6vw, 2rem);
-    color: rgb(247, 243, 243);
-  }
+ 
   
   /*baner inicio*/
   #baner {
@@ -365,78 +282,8 @@
     border: none;
   }
   
-  /*Estilos Footer*/
-  #footer {
-    width: 100%;
-    min-height: 100px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 50px;
-    position: absolute;
-  }
-  .text-contacto {
-    color: #fdfbfb;
-  }
-  .footer__logo img {
-    height: 70px;
-  }
   
-  .footer_whasp, .footer_facebook {
-    font-size: 40px;
-    color: white;
-  }
   
-  .footer_facebook :hover {
-    transform: translateY(-10px);
-  }
-  
-  .footer_whasp :hover {
-    transform: translateY(-10px);
-  }
-
-  .footer_links ul {
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-  }
-  .footer_links ul li a {
-    color: white;
-    text-decoration: none;
-  }
-
-  /*responsive*/
-  @media screen and (max-width: 900px) {
-    .shoping {
-      width: 300px;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(12, 150px);
-    }
-  }
-  @media screen and (max-width: 480px) {
-    #footer {
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      
-    }
-  }
-  #section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  @media screen and (max-width: 900px) {
-    .login1 {
-      width: 300px;
-      height: auto;
-    }
-  }
 
   html, body {
     height: 100%;

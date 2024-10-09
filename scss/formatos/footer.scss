@@ -1,0 +1,42 @@
+/*Estilos Footer*/
+#footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 50px;
+    position: absolute;
+  }
+  .text-contacto {
+    color: #fdfbfb;
+  }
+  .footer__logo img {
+    height: 70px;
+  }
+  
+  .footer_whasp, .footer_facebook {
+    font-size: 40px;
+    color: white;
+  }
+  
+  .footer_facebook :hover {
+    transform: translateY(-10px);
+  }
+  
+  .footer_whasp :hover {
+    transform: translateY(-10px);
+  }
+
+  .footer_links ul {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+  }
+  .footer_links ul li a {
+    color: white;
+    text-decoration: none;
+  }

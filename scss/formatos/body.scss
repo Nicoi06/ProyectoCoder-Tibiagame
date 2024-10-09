@@ -1,0 +1,31 @@
+/*body de index-inicio*/
+#body1 {
+    max-width: 1920px;
+    background-color: rgb(36, 31, 31);
+}
+/*body de pages*/
+#body2 {
+    max-width: 1920px;
+    background-image: url(../Images/fondo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 110px;
+    min-height: 100vh;
+    
+    
+}
+
+/*body login*/
+#body3 {
+    max-width: 1920px;
+    max-height: 100vh;
+    background: url(../Images/fondo2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

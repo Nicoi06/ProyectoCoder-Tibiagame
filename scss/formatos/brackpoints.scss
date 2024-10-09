@@ -1,0 +1,29 @@
+/*responsive*/
+@media screen and (max-width: 900px) {
+    .shoping {
+      width: 300px;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 150px);
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #footer {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      
+    }
+  }
+  #section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .login1 {
+      width: 300px;
+      height: auto;
+    }
+  }
