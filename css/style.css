@@ -428,6 +428,11 @@ li:hover {
   border: none;
 }
 
+.since {
+  display: flex;
+  justify-content: end;
+}
+
 html, body {
   height: 100%;
 }

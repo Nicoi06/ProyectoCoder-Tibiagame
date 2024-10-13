@@ -6,7 +6,6 @@
   @import "formatos/footer";
   
   
- 
   
   /*baner inicio*/
   #baner {
@@ -282,7 +281,10 @@
     border: none;
   }
   
-  
+  .since {
+    display: flex;
+    justify-content: end;
+  }
   
 
   html, body {
