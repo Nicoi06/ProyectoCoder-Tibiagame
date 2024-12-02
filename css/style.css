@@ -86,6 +86,9 @@
   color: rgb(247, 243, 243);
 }
 
+.botn-comprar   {
+  margin-right: 40px;
+}
 /*responsive*/
 @media screen and (max-width: 900px) {
   .shoping {
@@ -334,8 +337,8 @@ li:hover {
 }
 
 .login1 .boton {
-  width: 100%;
-  height: 45px;
+  width: 50%;
+  height: 30px;
   background: #fdfbfb;
   border: none;
   outline: none;
@@ -345,6 +348,7 @@ li:hover {
   font-size: 16px;
   color: gray;
   font-weight: 600;
+  margin-left: 100px;
 }
 
 .login1 .boton:hover {
@@ -441,6 +445,9 @@ html, body {
 #iconoCarrito {
   font-size: 2rem;
 }
+
+/*Registro*/
+
 
 
 /*# sourceMappingURL=style.css.map */
